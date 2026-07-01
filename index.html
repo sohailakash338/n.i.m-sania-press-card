@@ -1,30 +1,495 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Multan Express</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>NIM NEWS HD | Official Press Verification</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+
+background:
+radial-gradient(circle at top,#10335d 0%,#07172f 50%,#030914 100%);
+
+color:#fff;
+
+}
+
+.container{
+
+max-width:1280px;
+margin:auto;
+padding:30px 20px 80px;
+
+}
+
+/* HEADER */
+.hero{
+background:
+linear-gradient(
+180deg,
+rgba(255,255,255,.97),
+rgba(244,247,252,.96)
+);
+border-radius:32px;
+padding:50px;
+text-align:center;
+box-shadow:
+0 35px 70px rgba(0,0,0,.35);
+border:1px solid rgba(255,255,255,.5);
+}
+
+.logo{
+width:330px;
+max-width:90%;
+}
+
+.portal{
+margin-top:18px;
+font-size:52px;
+font-weight:900;
+color:#0b2d58;
+line-height:1.1;
+}
+
+.portal span{
+color:#c4001d;
+}
+
+.subtitle{
+margin-top:14px;
+font-size:19px;
+color:#666;
+}
+
+/* TOP INFO */
+.top{
+display:grid;
+grid-template-columns:
+repeat(3,1fr);
+gap:18px;
+margin-top:28px;
+}
+
+.item{
+background:
+rgba(255,255,255,.08);
+padding:24px;
+border-radius:20px;
+backdrop-filter:blur(14px);
+border:
+1px solid rgba(255,255,255,.08);
+}
+
+.item h3{
+color:#fff;
+margin-bottom:8px;
+}
+
+.item p{
+color:#b8c5d7;
+}
+
+/* VERIFY */
+.verify{
+margin-top:34px;
+background:#fff;
+border-radius:32px;
+padding:50px;
+color:#0b2244;
+box-shadow:
+0 20px 60px rgba(0,0,0,.30);
+}
+
+.verify-title{
+font-size:42px;
+font-weight:900;
+text-align:center;
+}
+
+.verify-title span{
+color:#c00018;
+}
+
+.line{
+width:110px;
+height:5px;
+background:
+linear-gradient(
+90deg,
+#082952,
+#d1001f
+);
+margin:
+18px auto 40px;
+border-radius:50px;
+}
+
+.input{
+width:100%;
+height:72px;
+border:2px solid #d8e0ea;
+border-radius:18px;
+padding:0 28px;
+font-size:22px;
+outline:none;
+}
+
+.input:focus{
+border-color:#113f76;
+}
+
+.btn{
+margin-top:22px;
+width:100%;
+height:74px;
+border:none;
+border-radius:18px;
+font-size:24px;
+font-weight:800;
+color:#fff;
+cursor:pointer;
+background:
+linear-gradient(
+90deg,
+#082952,
+#d1001f
+);
+}
+
+.btn:hover{
+transform:translateY(-2px);
+}
+
+/* RESULT */
+.result{
+display:none;
+margin-top:36px;
+}
+
+.card{
+overflow:hidden;
+border-radius:30px;
+background:#fff;
+color:#0b2244;
+box-shadow:
+0 30px 60px rgba(0,0,0,.25);
+}
+
+.head{
+padding:24px 36px;
+background:
+linear-gradient(
+90deg,
+#082952,
+#0b4d94
+);
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.verified{
+background:#1fa85a;
+padding:10px 18px;
+border-radius:50px;
+font-weight:700;
+}
+
+.active{
+font-weight:800;
+}
+
+.content{
+display:grid;
+grid-template-columns:
+320px 1fr;
+padding:36px;
+gap:34px;
+}
+
+.photo{
+width:100%;
+border-radius:18px;
+}
+
+.name{
+font-size:54px;
+font-weight:900;
+}
+
+.name span{
+color:#c00018;
+}
+
+.position{
+margin-top:8px;
+font-size:20px;
+color:#607080;
+}
+
+.grid{
+margin-top:26px;
+display:grid;
+grid-template-columns:
+1fr 1fr;
+gap:18px;
+}
+
+.box{
+background:#f7f9fc;
+padding:18px;
+border-radius:14px;
+}
+
+.label{
+font-size:14px;
+color:#7c8794;
+}
+
+.value{
+margin-top:8px;
+font-size:22px;
+font-weight:800;
+}
+
+.notice{
+margin-top:28px;
+background:#f4f8fc;
+padding:24px;
+border-left:5px solid #d1001f;
+border-radius:14px;
+line-height:1.8;
+}
+
+/* FOOTER */
+.footer{
+margin-top:30px;
+padding:36px;
+background:
+rgba(255,255,255,.08);
+border-radius:24px;
+text-align:center;
+color:#d2dbea;
+}
+
+@media(max-width:850px){
+.portal{
+font-size:34px;
+}
+.top{
+grid-template-columns:1fr;
+}
+.content{
+grid-template-columns:1fr;
+}
+.grid{
+grid-template-columns:1fr;
+}
+.name{
+font-size:40px;
+}
+.verify{
+padding:26px;
+}
+}
+
+</style>
+
 </head>
+
 <body>
-<header>
-<h1>DAILY MULTAN EXPRESS</h1>
-<p>سچ کی رفتار</p>
-</header>
 
-<main>
-<h2>خوش آمدید</h2>
-<p>یہ ڈیلی ملتان ایکسپریس کی نمونہ ویب سائٹ ہے۔</p>
+<div class="container">
 
-<h3>ادارے کی معلومات</h3>
-<p>یہاں آپ ادارے، نمائندگان، پریس کارڈ ویریفکیشن اور رابطہ معلومات شامل کر سکتے ہیں۔</p>
+<div class="hero">
+<img src="logo.png" class="logo">
+<div class="portal">
+PRESS MEDIA
+<span>VERIFICATION</span>
+PORTAL
+</div>
+<div class="subtitle">
+Official Digital Identity Verification System
+</div>
+</div>
 
-<h3>پریس کارڈ ویریفکیشن</h3>
-<p>اس صفحے کو QR کوڈ کے ساتھ منسلک کیا جا سکتا ہے۔</p>
-</main>
+<div class="top">
+<div class="item">
+<h3>Official Verification</h3>
+<p>Authenticated media identity records</p>
+</div>
+<div class="item">
+<h3>Secure System</h3>
+<p>Protected verification process</p>
+</div>
+<div class="item">
+<h3>Instant Result</h3>
+<p>Live press card validation</p>
+</div>
+</div>
 
-<footer>
-<p>© Daily Multan Express</p>
-</footer>
+<div class="verify">
+<div class="verify-title">
+VERIFY PRESS <span>CARD</span>
+</div>
+<div class="line"></div>
+
+<input
+id="pressid"
+class="input"
+placeholder="Enter Press ID">
+
+<button
+class="btn"
+onclick="verify()">
+VERIFY NOW
+</button>
+
+<div
+class="result"
+id="show">
+
+<div class="card">
+<div class="head">
+<div class="verified">
+✓ VERIFIED
+</div>
+<div class="active">
+STATUS : ACTIVE
+</div>
+</div>
+
+<div class="content">
+<div>
+<img
+src="photo.jpg"
+class="photo">
+</div>
+
+<div>
+<div class="name">
+SANIYA <span>SIRAJ</span>
+</div>
+<div class="position">
+Bureau Chief
+</div>
+
+<div class="grid">
+<div class="box">
+<div class="label">
+PRESS ID
+</div>
+<div class="value">
+N.i.M-500201
+</div>
+</div>
+
+<div class="box">
+<div class="label">
+CNIC
+</div>
+<div class="value">
+42101-98896599
+</div>
+</div>
+
+<div class="box">
+<div class="label">
+PHONE
+</div>
+<div class="value">
+03199221665
+</div>
+</div>
+
+<div class="box">
+<div class="label">
+CITY
+</div>
+<div class="value">
+KARACHI
+</div>
+</div>
+
+<div class="box">
+<div class="label">
+VALID TILL
+</div>
+<div class="value">
+01 JULY 2027
+</div>
+</div>
+
+</div>
+
+<div class="notice">
+This press identity card is digitally verified and officially recognized by NIM NEWS HD. 
+Unauthorized use or duplication may result in cancellation.
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+© NIM NEWS HD — Official Press Verification Portal
+</div>
+
+</div>
+
+<script>
+function verify(){
+let id=
+document
+.getElementById(
+"pressid"
+).value
+.trim();
+
+if(
+id==="N.i.M-500201"
+){
+document
+.getElementById(
+"show"
+)
+.style
+.display=
+"block";
+
+window
+.scrollTo({
+top:
+document
+.getElementById(
+"show"
+)
+.offsetTop-100,
+behavior:
+"smooth"
+});
+}
+else{
+alert(
+"Invalid Press ID"
+);
+}
+</script>
+
 </body>
 </html>
