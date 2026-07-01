@@ -19,20 +19,15 @@ font-family:Segoe UI,Arial,sans-serif;
 }
 
 body{
-
 background:
 radial-gradient(circle at top,#10335d 0%,#07172f 50%,#030914 100%);
-
 color:#fff;
-
 }
 
 .container{
-
 max-width:1280px;
 margin:auto;
 padding:30px 20px 80px;
-
 }
 
 /* HEADER */
@@ -393,7 +388,7 @@ Bureau Chief
 PRESS ID
 </div>
 <div class="value">
-N.i.M-500201
+N.I.M-500201
 </div>
 </div>
 
@@ -454,41 +449,19 @@ Unauthorized use or duplication may result in cancellation.
 
 <script>
 function verify(){
-let id=
-document
-.getElementById(
-"pressid"
-).value
-.trim();
+let id = document.getElementById("pressid").value.trim().toUpperCase();
 
-if(
-id==="N.i.M-500201"
-){
-document
-.getElementById(
-"show"
-)
-.style
-.display=
-"block";
-
-window
-.scrollTo({
-top:
-document
-.getElementById(
-"show"
-)
-.offsetTop-100,
-behavior:
-"smooth"
+if(id === "N.I.M-500201"){
+document.getElementById("show").style.display = "block";
+window.scrollTo({
+top: document.getElementById("show").offsetTop-100,
+behavior: "smooth"
 });
 }
 else{
-alert(
-"Invalid Press ID"
-);
+alert("Invalid Press ID");
 }
+}  // <-- بریکٹ فکس ہو گیا
 </script>
 
 </body>
